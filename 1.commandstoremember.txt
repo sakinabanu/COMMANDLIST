@@ -1,0 +1,259 @@
+COMMANDS TO REMEMBER :
+
+sudo su 
+	{To give permissions and let a user to work as a root user always used to enter into root}
+
+ctrl+D (or) exit
+	{To exit from a runnig process or root or any other platform}
+	
+mkdir folder
+	{Creates a new folder}
+
+mkdir folder1 folder2 folder3 foldern
+	{Creates multiple new folders}
+
+mkdir -p folder1 folder2 folder3 foldern
+	{Creates folders in the folders}
+
+cd
+	{Get back to home folder from any folder} 
+
+cd ..
+	{Get to the mother folder of the folder and continues}
+
+cd folder (or) cd folder/
+	{Opens the folder so that the user can access it}
+
+ls
+	{Shows the folders or files present in the particular open folder}
+
+ls -a
+	{It shows hidden folders like .folders }
+
+pwd  
+	{It shows the absolute path of the folder which is open}
+	{Relative path is always showen on the side in blue color}
+
+touch file.txt
+	{Creates a new file}
+
+touch file1.txt file2.txt file3.txt filen.txt
+	{Creates multiple new files}
+
+rm -rf folder (or) rm -rf file.txt
+	{Delete one folder or a file}
+
+rm -rf folder1 folder2 folder3 foldern (or) rm -rf file1.txt file2.txt file3.txt filen.txt
+	{Deletes multiple folders or files}
+
+rm -rf *
+	{Deletes all folder and files in present location}
+
+clear (or) ctrl+L
+	{Clears the screen}
+
+mv oldfoldername/  newfoldername/
+	{Renames a file or a folder}
+
+mv folder1/ folder2/
+	{Replace a folder into another folder}
+
+mv location/location1/location2/folder/ /location/location2/location3/folder
+	{Replace a folder from another location to desired location}
+
+.file.txt (or) .folder
+	{"." before a file or folder indicates that it is a hidden file or folder}
+
+cp-r folder1 folder2
+	{Copies the folder in another folder}
+
+cp-r /location1/location2/folder/ /location1/location2/location3/folder/
+	{Copies folders from one location to another location (following absolute path)}
+
+cp file.txt folder
+	{Copies a file into a folder}
+		[NOTE : Copying files from one file to another file is not possible, only data copy and paste can be done on another file.]
+
+cp file1.txt flie2.txt file3.txt filen.txt folder
+	{Copies multiple files into a folder}
+
+cp location/location1/location2/folder/file.txt/ /location/location2/location3/folder
+	{Copies a file from one location to another location folder (following absolute path)}
+
+nano file.txt
+	{Opens the file to add the data or do changes and save the data in file.}
+		[NOTE: "ctrl+o" is used to save changes done, press "enter" to confirm the file name where the data should be saved, "ctrl+x" to exit from the file.]
+
+cat file.txt
+	{It shows the data present in the file.}
+
+history
+	{It represents the history commands used by user.}
+
+echo "message"
+	{It prints the given message present in quotations.}
+
+echo "message" > file.txt
+	{It prints the message in the given file and if file is not created it creates one and the prints the message in it.}
+
+echo "message" >> file.txt
+	{It prints the message after the old message in the file.}
+
+cat file1.txt > file2.txt
+	{This prints file1 data into file2 data by deleting the old data present in file2.}
+
+cat file1.txt >> file2.txt
+	{This prints file1 data into file2 data without doing any changes in old data present in file2 it adds the new data after the old data.}
+
+python -m http.server 8080
+	{This command converts a machine into a webserver using "http" protocol with a port number (like 8080). This server is run to access files from one device to another under one router.}
+		[NOTE : Two servers cannot run side by side under same port from a single device so different port no's. which are not taken can be used to run two or many servers.]
+
+python3 -m http.server 8080
+	{This is used for updated versions to converts a machine into a webserver using "http" protocol with a port number (like 8080). This server is run to access files from one device to another under one router.}
+		[NOTE : Python3 is updated version right now.]
+
+sudo apt install ___________
+	{It installs whatever is to be "_______" installed.}
+
+Packages : [NOTE : Installing not installed packages will install or else it will give that package is already installed.]
+
+sudo apt install figlet 
+	{It installs figlet package.}
+
+figlet message
+	{It types a message in dash design format like given below.}
+	 _ _ _ _     _ _ _   _ _ _ _ _ _   _ _  _   _ _  _    _ _ _
+        | '_   _`\ /  _   \/  _ _ /  _ _|/   _ ` |/   _ `  |/   _   \
+        | | | | | |   _ _ / \_ _  \_ _   \  (_|  |   (_|   |    _ _ /
+        |_| |_| |_|\_ _ _ ||_ _ _/ _ _ _/ \_ _ ,_|\ _ _ ,  |\_ _ _ |
+                                                   |_ _ _ /
+
+python3 -d
+	{It opens python coding platform in the terminal which is the updated version.}
+
+python3 -v (or) python3 --version
+	{It shows which version of python we are using in the device.}
+
+sudo apt update && sudo apt upgrade
+	{These two are used to modifiy the system, upgrade and update it for easy installation.}
+		[NOTE : These can be frequently done to upgrade and update the device.]
+
+sudo apt install lolcat 
+	{It install lolcat package.}
+
+figlet message | lolcat
+	{It prints the message in color and changes the color after pressing enter everytime.}
+
+
+install net-tools
+	{It installs tools for ubuntu network configuration and connections.}
+
+ifconfig
+	{It give the network configuration of the ubuntu, it is one of the net-tool.}
+
+kill processid
+	{It is to kill a running process we use this command and kill it with process id.}
+
+kill option processid
+	{OPTION : It is to select which action to be taken to kill a process by killing the id.}
+
+		 ____________________________________________________________
+		|							     |
+		|	WAYS OF KILLING :				     |
+		|							     |
+		|	kill-1 processid				     |
+		|		{It is used to restart the process.}	     |
+		|							     |
+		|	kill-2 processid				     |
+		|		{interrupt from keyboard like ctrl + c.}     |
+		|							     |
+		|	kill-9 processid				     |
+		|		{It forcefully terminates the process.}	     |
+		|							     |
+		|	kill-15 processid				     |
+		|		{It kills the process gracefully.}	     |
+		|____________________________________________________________|
+
+ 
+ps -ef
+	{It is used to check which process we are in.}
+
+&& 
+	{It is used to add another command side wise to runn both together.}
+		[NOTE : This is also used to run other commands while running server together.]
+
+ln -s mainfile.txt newfile.txt
+	{It  makes a new file(this file must not be already created) and creates a softlink to both the files and do all changes in both of them in same way, but here if the main file is deleted the data of newfile will also be deleted.} 
+
+ln mainfile.txt newfile.txt
+	{It  makes a new file(this file must not be already created) and creates a hardlink to both the files and do all changes in both of them in same way, but here if the main file is deleted the data of newfile will not be deleted.} 
+
+ls -l file.txt (or) ls -l folder
+	{It give details of the permissions for the file or folder.}
+
+sudo chmod 777 /
+	{It gives all permissions to each file and folder in the folder.}
+
+sudo chmod  777 file.sh  (or) sudo chmod  777 folder
+	{It give all permissions to the user to access the data of files and folders in all ways.}
+
+ping website.com
+ [PING : Packet Internet Grofer]
+	{This checks the website is working or not}
+
+wget -m website.com
+	{If you like a website you can get it details and download files even if server is not logged.}
+
+explore.exe
+	{takes the user to a GUI terminal.}
+
+zip -r file.zip
+	{ It adds files to a zip file. }
+
+unzip file.zip 
+	{It unzips the files }  
+
+bash script.sh
+	{It runs the commands in the given script file.}
+
+crontab -e
+	{It runs the cronjob time at the assigned setup and does the task at the given time.}
+
+sudo service cron start 
+	{It starts the cron setup.}
+
+sudo service cron restart 
+	{It restarts the cron setup.}
+
+sudo service cron stop
+	{It stops the cron setup.}
+
+crontab -r 
+	{It deletes the cronjob.}
+
+sudo apt install sl
+	{installs package}
+
+sl
+	{It shows an engine moving with data packages.}
+
+sudo apt install cmatrix 
+	{install package}
+
+cmatrix
+	{It presents data in a rainfall. }
+
+sudo apt install libaa -bin 
+	{This package havve multiple styles of presenting data like aafire, aainfo etc.}
+
+aafire 
+	{It represents data in fire form.}
+
+aafire | lolcat 
+	{it represents data  in a colorful fire form.}
+
+sudo timedatectl set-timezone Asia/Kolkata 
+	{It converts time to IST.}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
